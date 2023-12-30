@@ -3,7 +3,7 @@ import { Action } from "../actions";
 
 const initalState = 0;
 
-const bankReducer = (state: number = 0, action: Action) => {
+const bankReducer = (state: number = initalState, action: Action) => {
   switch (action.type) {
     case ActionType.Deposit:
       return state + action.payload;
